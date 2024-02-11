@@ -1,0 +1,15 @@
+﻿gene_symbol,description,association_strength,padj,number_of_evidences,category
+LINC02904,long intergenic non-protein coding RNA 2904 [Source:HGNC Symbol;Acc:HGNC:26731],0.184652955,9.75218E-10,3,Good
+EFNA2,ephrin A2 [Source:HGNC Symbol;Acc:HGNC:3222],0.292815773,0.001317314,7,Good
+LFNG,"keratin 87, pseudogene [Source:NCBI gene (formerly Entrezgene);Acc:85349]",0.303171234,0.016159702,1,Moderate
+SYT2,synaptotagmin 2 [Source:HGNC Symbol;Acc:HGNC:11510],0.317392703,0.024994408,12,Excellent
+LINC00900,long intergenic non-protein coding RNA 900 [Source:HGNC Symbol;Acc:HGNC:27444],0.375290655,0.112293287,5,Good
+NR2F2-AS1,NR2F2 antisense RNA 1 [Source:HGNC Symbol;Acc:HGNC:44222],0.281664596,0.019980919,2,Moderate
+JPH.3,junctophilin 3 [Source:HGNC Symbol;Acc:HGNC:14203],0.389427129,0.141572537,2,Moderate
+METRNL,"meteorin like, glial cell differentiation regulator [Source:HGNC Symbol;Acc:HGNC:27584]",0.255509798,0.008974153,9,Excellent
+LINC01987,long intergenic non-protein coding RNA 1987 [Source:HGNC Symbol;Acc:HGNC:52819],0.294916934,0.034470657,5,Good
+SLC22A23,solute carrier family 22 member 23 [Source:HGNC Symbol;Acc:HGNC:21106],0.3440485,0.109660383,6,Good
+HOXC4,homeobox C4 [Source:HGNC Symbol;Acc:HGNC:5126],0.286881844,0.049411607,1,Moderate
+LINC01082,long intergenic non-protein coding RNA 1082 [Source:HGNC Symbol;Acc:HGNC:49125],0.3335481,0.135284702,7,Good
+ADAMTS17,ADAM metallopeptidase with thrombospondin type 1 motif 17 [Source:HGNC Symbol;Acc:HGNC:17109],0.211181623,0.005034131,9,Excellent
+BAIAP3,BAI1 associated protein 3 [Source:HGNC Symbol;Acc:HGNC:948],0.349753852,0.16296582,5,Good
