@@ -40,13 +40,16 @@ server <- function(input, output) {
     filtered <- data
     
     # Filter based on association strength
-    filtered <- filtered[filtered$association_strength >= input$association_strength[1], ]
+    filtered <- filtered[filtered$association_strength >= input$association_strength[1] & 
+                           filtered$association_strength <= input$association_strength[2], ]
     
     # Filter based on padj
-    filtered <- filtered[filtered$padj <= input$padj[2], ]
+    filtered <- filtered[filtered$padj >= input$padj[1] & 
+                           filtered$padj <= input$padj[2], ]
     
     # Filter based on number of evidences
-    filtered <- filtered[filtered$number_of_evidences >= input$number_of_evidences[1], ]
+    filtered <- filtered[filtered$number_of_evidences >= input$number_of_evidences[1] &
+                           filtered$number_of_evidences <= input$number_of_evidences[2], ]
     
     # Filter based on category
     if (input$category != "All") {
@@ -58,8 +61,12 @@ server <- function(input, output) {
   
   # Show filtered data in table
   output$gene_table <- DT::renderDataTable({
-    DT::datatable(filtered_data(), options = list(pageLength = 10))
+    DT::datatable(filtered_data(), options = list(pageLength = 10),
+                  callback=JS("table.on( 'order.dt search.dt', function () {
+       table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+       cell.innerHTML = i+1;});}).draw();"))
   })
+  
 }
 
 # Run the application
